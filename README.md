@@ -148,10 +148,6 @@ Add portfolio screenshots here after running the dashboard with your own data:
 
 **Vitor Dutra Melo** — Backend Developer
 
-- LinkedIn: _add your profile URL_
-- GitHub: _add your profile URL_
-- Portfolio: _add your portfolio URL_
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
