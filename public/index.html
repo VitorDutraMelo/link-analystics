@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Link Analytics</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="brand">L<span>/</span>A</div>
+        <div>
+          <h1>Link Analytics</h1>
+          <p>Short links. Clear signals.</p>
+        </div>
+        <button id="theme" aria-label="Toggle theme">◐</button>
+      </header>
+      <section id="auth" class="grid auth">
+        <form id="register">
+          <small>NEW ACCOUNT</small>
+          <h2>Create your workspace</h2>
+          <input name="name" placeholder="Name" required minlength="2" /><input
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+          /><input
+            name="password"
+            type="password"
+            placeholder="Password (8+ characters)"
+            required
+          /><button>Create account</button>
+        </form>
+        <form id="login">
+          <small>WELCOME BACK</small>
+          <h2>Sign in</h2>
+          <input name="email" type="email" placeholder="Email" required /><input
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+          /><button>Sign in</button>
+        </form>
+      </section>
+      <section id="app" hidden>
+        <div class="toolbar">
+          <form id="shorten">
+            <input name="url" type="url" placeholder="Paste a long URL…" required /><button>
+              Shorten link
+            </button>
+          </form>
+          <button id="logout" class="ghost">Log out</button>
+        </div>
+        <div class="stats">
+          <article><small>TOTAL CLICKS</small><strong id="total">0</strong></article>
+          <article><small>CLICKS TODAY</small><strong id="today">0</strong></article>
+          <article><small>LAST 7 DAYS</small><strong id="week">0</strong></article>
+        </div>
+        <div class="panel">
+          <div>
+            <small>PERFORMANCE</small>
+            <h2>Clicks over time</h2>
+          </div>
+          <div id="chart" class="chart"></div>
+        </div>
+        <div class="columns">
+          <div class="panel">
+            <small>YOUR LINKS</small>
+            <div id="links"></div>
+          </div>
+          <div class="panel">
+            <small>BREAKDOWN</small>
+            <div id="breakdown"><p>Select a link to inspect analytics.</p></div>
+          </div>
+        </div>
+      </section>
+      <div id="toast"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
